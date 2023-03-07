@@ -9,6 +9,11 @@ import numpy as np
 _this_file_path = os.path.dirname(__file__)
 _data_path = _this_file_path + "/data"
 
+# From https://en.wikipedia.org/wiki/DCI-P3
+p3_red_xyz = np.array([0.68, 0.32, 0.0])
+p3_green_xyz = np.array([0.265, 0.69, 0.0])
+p3_blue_xyz = np.array([0.15, 0.06, 0.0])
+
 # Chromaticity coordinates (normalized xyz) for primaries of sRGB color space.
 # Accessed from: http://www.color.org/chardata/rgb/srgb.pdf.
 # Accessed on: Nov 30, 2014.
